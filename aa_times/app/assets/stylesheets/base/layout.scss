@@ -1,0 +1,164 @@
+/* Define application-wide selectors here!*/
+
+html {
+	position: relative;
+	height: 100%;
+}
+
+body {
+width: 80%;
+margin: 0 auto;
+font-family: $serif;
+font-size: 12px;
+}
+
+button {
+	background-color: cornflowerblue;
+	border-color: none;
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 8px;
+	font-family: inherit;
+	text-transform: inherit;
+	font-size: inherit;
+	text-align: center;
+}
+
+ul {
+	display: flex;
+}
+
+li {
+	// font-family: wingdings;
+	font-size: 12px;
+	text-transform: lowercase;
+}
+
+button:hover {
+	// background-color:
+	// border-color:
+}
+
+.fas.fa-cog {
+	font-size: 34px;
+}
+
+li :not(button):hover {
+	background: grey;
+}
+
+/*
+	Header Ruless
+*/
+
+hr {
+	border: 0;
+	height: 1px;
+	background-color: $light-gray;
+}
+
+.hr-top, .hr-bottom {
+	width: 100%;
+	margin: 0;
+}
+
+.hr-top {
+	height: 2px;
+	margin-bottom: 1px;
+}
+
+
+.scroll-left {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+}
+.scroll-left button {
+ position: absolute;
+ width: 10%;
+ height: 100%;
+ margin: 0 auto;
+ line-height: 50px;
+ text-align: center;
+ padding-left: 10px;
+ padding-right: 10px;
+ /* Starting position */
+ -moz-transform:translateX(1000%);
+ -webkit-transform:translateX(1000%);	
+ transform:translateX(1000%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-left 2s linear infinite;
+ -webkit-animation: scroll-left 2s linear infinite;
+ animation: scroll-left 2s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateX(1000%); }
+ 100% { -moz-transform: translateX(-1000%); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateX(1000%); }
+ 100% { -webkit-transform: translateX(-1000%); }
+}
+@keyframes scroll-left {
+ 0%   { 
+ -moz-transform: translateX(1000%); /* Browser bug fix */
+ -webkit-transform: translateX(1000%); /* Browser bug fix */
+ transform: translateX(1000%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-1000%); /* Browser bug fix */
+ -webkit-transform: translateX(-1000%); /* Browser bug fix */
+ transform: translateX(-1000%); 
+ }
+}
+
+
+.scroll-right {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+}
+.scroll-right button {
+ position: absolute;
+ width: 10%;
+ height: 100%;
+ margin: 0 auto;
+ line-height: 50px;
+ text-align: center;
+ padding-left: 10px;
+ padding-right: 10px;
+ /* Starting position */
+ -moz-transform:translateX(1000%);
+ -webkit-transform:translateX(1000%);	
+ transform:translateX(1000%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-right 1s linear infinite;
+ -webkit-animation: scroll-right 1s linear infinite;
+ animation: scroll-right 1s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-right {
+ 0%   { -moz-transform: translateX(-1000%); }
+ 100% { -moz-transform: translateX(1000%); }
+}
+@-webkit-keyframes scroll-right {
+ 0%   { -webkit-transform: translateX(-1000%); }
+ 100% { -webkit-transform: translateX(1000%); }
+}
+@keyframes scroll-right {
+ 0%   { 
+ -moz-transform: translateX(-1000%); /* Browser bug fix */
+ -webkit-transform: translateX(-1000%); /* Browser bug fix */
+ transform: translateX(-1000%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(1000%); /* Browser bug fix */
+ -webkit-transform: translateX(1000%); /* Browser bug fix */
+ transform: translateX(1000%); 
+ }
+}
+
+
+
